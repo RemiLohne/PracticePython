@@ -1,0 +1,43 @@
+'''
+Take a list, say for example this one:
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+and write a program that prints out all the elements of the list
+that are less than 5.
+
+Extras:
+1    Instead of printing the elements one by one, make a new list that has 
+     all the elements less than 5 from this list in it 
+     and print out this new list.
+     
+2    Write this in one line of Python.
+
+3    Ask the user for a number and return a list that contains only 
+     elements from the original list a that are smaller than 
+     that number given by the user.
+ '''
+ 
+first_list = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+
+for x in first_list :
+    if x <= 5:
+        print(x) 
+
+#Extra 1
+second_list = []        
+for c in first_list :
+    if c <=5:
+        second_list.append(c)   
+print(second_list)
+
+#Extra 2 
+third_list = []
+
+
+#Extra 3
+forth_list = []
+num = 0
+num = int(input("Enter a number - and the list will find all under this number : "))
+for d in first_list:
+    if d <= num:
+        forth_list.append(d)
+print(forth_list)
