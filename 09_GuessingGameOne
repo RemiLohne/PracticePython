@@ -1,0 +1,24 @@
+import random
+game = ""
+count = 0
+state = "true"
+while game != "exit"  :
+    game = input("type exit if you want to quit: ")
+    if game != "exit":
+        nr = random.randint(1,9)
+        while state == "true":
+            count+=1
+            guess = int(input("Guess a number from 1 - 9 : "))
+            if guess < nr:
+                print("too low")
+                state = "true"
+            elif guess > nr:
+                print("too high")
+                state = "true"
+            elif guess == nr :
+                print("correct, number of guesses : ", count)
+                state = "false"
+    else:    
+        print("Game over!")
+        
+        
