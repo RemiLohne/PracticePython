@@ -1,0 +1,26 @@
+
+"""
+Make a two-player Rock-Paper-Scissors game. (Hint: Ask for player 
+plays (using input), compare them, print out a message of 
+congratulations to the winner, and ask if the players 
+want to start a new game)
+"""
+game = ""
+
+while game != "stop":
+    game = input("type stop if you want to quit: ")
+    if game != "stop":
+        player1 = input("PLayer1 - enter rock , paper or scissors: ")
+        player2 = input("Player2 - enter rock , paper or scissors: ")
+        if player1 == player2 :
+            print("it's a draw\n")
+        elif player1 == "rock" and player2 != "paper":
+            print ("Player1 is winner\n")
+        elif player1 == "paper" and player2 != "scissors":
+            print("Player1 is winner\n")
+        elif player1 == "saks" and player2 != "rock":
+            print("Player1 is winner\n")
+        else:
+            print("Player2 is winner\n")
+    else : 
+        print("Game over")
